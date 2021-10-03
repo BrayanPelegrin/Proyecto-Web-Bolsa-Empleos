@@ -1,0 +1,46 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: url(https://www.10wallpaper.com/wallpaper/2560x1600/1612/Minimalistic_Abstract-2016_Vector_Design_HD_Wallpaper_2560x1600.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.login h4 {
+  color: rgb(21, 199, 154);
+}
+.login {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login h1 {
+  width: 100%;
+  float: left;
+  font-size: 30px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 20px;
+  padding: 13px 10;
+  color: rgb(13, 230, 146);
+}
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.btn {
+  width: 100%;
+  margin: 3px;
+  background-color: blue;
+  color: aliceblue;
+  border: none;
+}
+.btn:hover {
+  background-color: grey;
+}

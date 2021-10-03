@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>EmpleosRD</title>
+    <link rel="stylesheet" type="text/css" href="css/css_inicio.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_login.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="contenedor logo-nav-contenedor">
+        <a href="#" class="logo">LOGO</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesion</a></li>
+            <li><a href="crear_cuenta.html">Crear Cuenta</a></li>
+            <li><a href="vacantes.html">Vacantes</a></li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <div class="cont">
+        <div class="container">
+          <h3>Buzca el trabajo que deseas.</h3>
+          <p>Buscar por descripción y categoría.</p>
+          <form
+            class="form-inline"
+            th:action="@{/search}"
+            method="get"
+            th:object="${search}"
+          >
+            <input
+              type="text"
+              class="txt2"
+              th:field="*{descripcion}"
+              placeholder="Escriba una búsqueda"
+            />&nbsp;
+            <select th:field="*{categoria.id}" class="lista">
+              <option th:value="${null}" selected>
+                Seleccione una categoría
+              </option>
+              <option
+                th:each="categoria : ${categorias}"
+                th:value="${categoria.id}"
+                th:text="${categoria.nombre}"
+              ></option></select
+            >&nbsp;
+            <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+          </form>
+        </div>
+        <hr />
+      </div>
+
+      <div class="cont">
+        <h2 class="font-weight-bold text-center text-capitalize">
+          Empleos Destacados
+        </h2>
+        <hr />
+        <div class="row" th:each="vacante : ${vacantes}">
+          <div class="col-md-9">
+            <h2 th:text="${}"></h2>
+            <h6 class="card-title">
+              <strong>Categoría: </strong>
+              <span th:text="${vacante.categoria.nombre}"></span>
+            </h6>
+            <h6 class="card-title">
+              <strong>Publicado: </strong>
+              <span
+                th:text="${#dates.format(vacante.fecha,'dd-MM-yyyy')}"
+              ></span>
+            </h6>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <!-- /container -->
+    </main>
+  </body>
+</html>

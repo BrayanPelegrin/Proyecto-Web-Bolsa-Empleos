@@ -1,0 +1,14 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+.imgp {
+  width: 100%;
+  height: 600px;
+}
+.infoS {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 30%;
+  color: white;
+  font-size: 40px;
+}
