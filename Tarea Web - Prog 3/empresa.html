@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/css_empresas.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_login.css" />
+
+    
+    <title>Empresas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor logo-nav-contenedor">
+          <video class="video_logo" src="./img/logi video.mp4" autoplay muted loop width="90" height="90"></video>
+          <nav class="nav">
+            <ul>
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="login.html">Iniciar Sesion</a></li>
+              <li><a href="crear_cuenta.html">Crear Cuenta</a></li>
+              <li><a href="vacantes.html">Vacantes</a></li>
+              <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="cotenerdor_formulario">
+
+        <h2>Datos de la vacante</h2>
+     
+       <form action="infomaciones" method="get">
+         <div class=" Imfomaciones_requeridas">
+        <p>Nombre de la empresa: <input type="text" name="nombre" size="40"></p>
+        <p>Nombre del puesto: <input type="text" name="nombre" size="40"></p>
+        <p>Tipo del puesto:
+            <input type="radio" name="hm" value="h">  full-time
+            <input type="radio" name="hm" value="m">  part-time
+            <input type="radio" name="hm" value="m">  freelance
+          </p>
+        <p>Vacantes disponibles: <input type="number" name="vacantes" min="1"></p>
+        <p>Posicion:<input type="text" name="nombre" size="40"></p>
+        <p>categoria:<input type="text" name="nombre" size="40"></p>
+        <p>Direccion:<input type="text" name="nombre" size="40"></p>
+        
+        <p>Sexo Solicitado:
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+          <input type="radio" name="hm" value="hm"> Ambos
+       
+        </p>
+       
+        <p>
+            <input type="submit" value="Enviar">   <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            <input type="reset" value="Borrar Informacion">  <i class="fa fa-trash-o" aria-hidden="true"></i>
+            <input type="submit" value="Editar puesto">  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </p>
+    </div>
+  </div>
+
+    </form>
+</div>
+
+
+    
+</body>
+</html>

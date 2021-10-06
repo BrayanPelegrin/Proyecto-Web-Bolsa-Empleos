@@ -1,0 +1,20 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+.Imfomaciones_requeridas{
+    color: #00adb5;
+}
+.video_logo{
+    padding: -10%;
+    margin: -10%;
+    padding-left: 100px;
+}
+.cotenerdor_formulario{
+    top: 25%;
+    left: 35%;
+    position: absolute;
+    border: 1px solid #00adb5 ;
+  
+}
+.cotenerdor_formulario h2{
+    color: white;
+    padding-left: 28%;
+}
