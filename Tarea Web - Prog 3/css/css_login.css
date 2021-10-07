@@ -7,6 +7,14 @@ body {
   background: #393e46;
 }
 
+.logo-oficial {
+  width: 150px;
+  height: 100px;
+  padding: -10%;
+  margin: -10%;
+  padding-left: 100px;
+}
+
 .header {
   background: #222831;
   color: white;
