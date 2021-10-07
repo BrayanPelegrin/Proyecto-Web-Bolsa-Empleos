@@ -31,17 +31,17 @@
      
        <form action="infomaciones" method="get">
          <div class=" Imfomaciones_requeridas">
-        <p>Nombre de la empresa: <input type="text" name="nombre" size="40"></p>
-        <p>Nombre del puesto: <input type="text" name="nombre" size="40"></p>
+        <p>Nombre de la empresa: <input type="text" placeholder="Nombre de la empresa..."  class="text-input"></p>
+        <p>Nombre del puesto: <input type="text" placeholder="Nombre del puesto..."  class="text-input"></p>
         <p>Tipo del puesto:
             <input type="radio" name="hm" value="h">  full-time
             <input type="radio" name="hm" value="m">  part-time
             <input type="radio" name="hm" value="m">  freelance
           </p>
-        <p>Vacantes disponibles: <input type="number" name="vacantes" min="1"></p>
-        <p>Posicion:<input type="text" name="nombre" size="40"></p>
-        <p>categoria:<input type="text" name="nombre" size="40"></p>
-        <p>Direccion:<input type="text" name="nombre" size="40"></p>
+        <p>Vacantes disponibles:  <input type="number" name="vacantes" min="1"></p>
+        <p>Posicion:  <input type="text" placeholder="Posicion disponible..."  class="text-input"></p>
+        <p>categoria:  <input type="text" placeholder="categoria..."  class="text-input"></p>
+        <p>Direccion:  <input type="text" placeholder="Direccion..."  class="text-input"></p>
         
         <p>Sexo Solicitado:
           <input type="radio" name="hm" value="h"> Hombre
@@ -51,9 +51,9 @@
         </p>
        
         <p>
-            <input type="submit" value="Enviar">   <i class="fa fa-paper-plane" aria-hidden="true"></i>
-            <input type="reset" value="Borrar Informacion">  <i class="fa fa-trash-o" aria-hidden="true"></i>
-            <input type="submit" value="Editar puesto">  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <button type="submit" class="boton"><i class="fa fa-paper-plane" aria-hidden="true"></i>Enviar</button>
+          <button type="submit" class="boton"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Editar puesto</button> 
+          <button type="submit" class="boton"><i class="fa fa-trash-o" aria-hidden="true"></i>Borrar puesto</button>
         </p>
     </div>
   </div>
