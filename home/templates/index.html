@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block content %}
+  <main role="main">
+      <div class="cont">
+        <div class="container">
+          <h3>Buzca el trabajo que deseas.</h3>
+          <p>Buscar por descripción y categoría.</p>
+          <form
+            class="form-inline"
+            th:action="@{/search}"
+            method="get"
+            th:object="${search}"
+          >
+            <input
+              type="text"
+              class="txt2"
+              th:field="*{descripcion}"
+              placeholder="Escriba una búsqueda"
+            />&nbsp;
+            <select th:field="*{categoria.id}" class="lista">
+              <option th:value="${null}" selected>
+                Seleccione una categoría
+              </option>
+              <option
+                th:each="categoria : ${categorias}"
+                th:value="${categoria.id}"
+                th:text="${categoria.nombre}"
+              ></option></select
+            >&nbsp;
+            <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+          </form>
+        </div>
+        <hr />
+      </div>
+
+      <div class="cont">
+        <h2 class="font-weight-bold text-center text-capitalize">
+          Empleos Destacados
+        </h2>
+        <hr />
+        <div class="row" th:each="vacante : ${vacantes}">
+          <div class="col-md-9">
+            <h2 th:text="${}"></h2>
+            <h6 class="card-title">
+              <strong>Categoría: </strong>
+              <span th:text="${vacante.categoria.nombre}"></span>
+            </h6>
+            <h6 class="card-title">
+              <strong>Publicado: </strong>
+              <span
+                th:text="${#dates.format(vacante.fecha,'dd-MM-yyyy')}"
+              ></span>
+            </h6>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <!-- /container -->
+  </main>
+{% endblock content %}

@@ -1,0 +1,63 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+.Imfomaciones_requeridas {
+  color: white;
+}
+.video_logo {
+  padding: -10%;
+  margin: -10%;
+  padding-left: 100px;
+}
+.cotenerdor_formulario {
+  border: 1px solid #00adb5;
+  padding: 20px;
+  height: 420px;
+  width: 620px;
+  position: absolute;
+  top: 50%;
+  background-color: #222831;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00adb5;
+  padding: 15px 30px;
+}
+
+.cotenerdor_formulario h2 {
+  color: white;
+  padding-left: 28%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.text-input {
+  background: none;
+  border: 1px solid #00adb5;
+  border-radius: 15px;
+  height: 20px;
+  width: 200px;
+  outline: none;
+  color: white;
+  transition: 0.25s;
+}
+
+.text-input:focus {
+  width: 300px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 #00adb5;
+}
+
+.boton {
+  background-color: #00adb5;
+  border: none;
+  border-radius: 15px;
+  height: 25px;
+  width: 120px;
+  margin-left: 7%;
+  color: white;
+  transition: 0.25s;
+}
+
+.boton:hover {
+  width: 175px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 #00adb5;
+}

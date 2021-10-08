@@ -1,0 +1,71 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+.login {
+  border: 1px solid #00adb5;
+  padding: 20px;
+  height: 420px;
+  width: 620px;
+  position: absolute;
+  top: 50%;
+  background-color: #222831;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00adb5;
+}
+.login h1 {
+  width: 100%;
+  float: left;
+  font-size: 30px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  padding: 13px 10;
+}
+
+.login h1 i {
+  margin-left: 17%;
+  font-size: 50px;
+}
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+}
+.textbox i {
+  color: white;
+}
+.boton {
+  width: 150px;
+  height: 30px;
+  margin: 3px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid #00adb5;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.boton:hover {
+  background-color: #00adb5;
+  width: 100%;
+}
+
+.text-input {
+  width: 200px;
+  height: 30px;
+  background: none;
+  border: 1px solid #00adb5;
+  border-radius: 15px;
+  transition: 0.25s;
+  color: white;
+  outline: none;
+}
+
+.text-input::placeholder {
+  color: grey;
+}
+
+.text-input:focus {
+  width: 450px;
+  box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 #00adb5;
+}
