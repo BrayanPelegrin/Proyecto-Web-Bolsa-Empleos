@@ -7,7 +7,7 @@ class SignupForm(forms.Form):
         min_length = 2,
         max_length = 50,
         widget = forms.TextInput(attrs={
-            'class' : 'text-input',
+            'class' : 'form-group',
             'id' : 'username',
             'placeholder' : 'example02',
             'aria-hidden' : 'true'
@@ -19,7 +19,7 @@ class SignupForm(forms.Form):
         min_length = 8,
         max_length = 100,
         widget = forms.PasswordInput(attrs = {
-            'class' : 'text-input',
+            'class' : 'form-group',
             'aria-hidden' : 'true'
         })
     )
