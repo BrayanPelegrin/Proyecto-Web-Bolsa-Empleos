@@ -51,3 +51,11 @@ def signup_view(request):
 
     context = {'form' : form}
     return render(request, './signup/register.html', context)
+
+def logout_view(request):
+    if request.user.is_authenticated == False:
+        return redirect('login')
+
+    logout(request)
+    messages.success(request, 'Bye! I hope you come back soon')
+    return redirect('login')
